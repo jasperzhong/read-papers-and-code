@@ -41,5 +41,6 @@ ax.xaxis.set_major_formatter(ticker.FixedFormatter(ticklabels))
 ax.figure.autofmt_xdate(rotation=30, ha='center')
 ax.set_xlabel("Date")
 ax.set_ylabel("# Papers")
-ax.set_title("Statistics of Reading Papers")
+ax.set_title("Statistics of Reading Papers (up to %s)" %
+             datetime.datetime.today().strftime('%Y-%m-%d'))
 plt.savefig("stat.png")
