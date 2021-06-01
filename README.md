@@ -1,1 +1,3 @@
-see issues
+![](stat.png)
+
+	That's not enough.
