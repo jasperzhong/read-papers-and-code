@@ -10,13 +10,13 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - run: |
-        dir
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        python stat.py
-        dir
-
+      - name: install dependencies
+        run: |
+          dir
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python stat.py
+          dir
       - name: commit file
         id: commit
         run: |
